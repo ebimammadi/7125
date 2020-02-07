@@ -1,8 +1,8 @@
-import {deleteButtonTemplateNode} from "./templates"
+import {deleteButtonTemplateNode} from "./Templates"
 /**
- * DeleteButton component
+ * ButtonComponent component
  */
-class DeleteButton {
+class ButtonComponent {
     constructor() {
         this.title = "Delete";
     }
@@ -14,4 +14,4 @@ class DeleteButton {
         return deleteButtonTemplateNode(this.title)
     }
 }
-export default DeleteButton
+export default ButtonComponent

@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 import "./styles/main.scss" //imports the scss file and finally will be exported by the webpack to the styles
 import DeleteButton from "./components/DeleteButton"
+=======
+import "./styles/main.scss"
+import "./styles/ButtonComponent.scss"
+import "./styles/SearchComponent.scss"
+import "./styles/SearchHistory.scss"
+import "./styles/SearchAutoComplete.scss"
+import ButtonComponent from "./components/ButtonComponent"
+>>>>>>> stageOne
 import SearchComponent from "./components/SearchComponent";
 
-const deleteButton = new DeleteButton();
+const deleteButton = new ButtonComponent();
 document.getElementById("buttonContainer").innerHTML = deleteButton.createHTMLNode();
 
 const searchComponent = new SearchComponent();

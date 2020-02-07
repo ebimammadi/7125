@@ -1,5 +1,36 @@
 # WORK TASK #
+* NOTE: I have used node.js and webpack to run this server. First you should run `npm install`, then `npm start`, you can see the application running
+* For building the application to dist folder run `npm build`
+* Finding a free public API was a time-consuming, so I created a simple GET at this address: https://omid.tadbir.net/api.php&search=SEARCH&searchInMiddle=true/false`
+* The delay for less stress on the API and capability to search in the middle of the title can be configure at `./src/index.js`
+* It was not clear to put the search history just under the autocomplete part, so I considered the autocomplete onto this part, if it is required I can change it.
+* Hope that I can have your honest feedback
 
+## File structure
+```               
+├── src
+│   ├── components
+|       ├── ButtonComponent.js          - Button Componet
+|       ├── SearchComponent.js          - Search Component
+|       ├── SearchAutoComplete.js
+|       ├── SeacrhHistory.js
+|       └── Templates.js                - Template literal JS 
+│   ├── images
+|       └── favicon.png         
+|   ├── styles 
+|       ├── ButtonComponent.scss                      
+|       ├── main.scss                   - The main responsive part 
+|       ├── SearchAutoComplete.scss
+|       ├── SeacrhComponents.js
+|       └── SeacrhHistory.js
+|   ├── templates 
+|       └── index.template.html         - It will be used with webpack to create the index.html file in 'dist' folder     
+|   └── index.js                        - Main app file                  
+├── package.json                        - Packages                                        
+├── readme.md                           - PLEASE READ MY COMMENTS FIRST
+└── webpack.js                          - Webpack configuration file                       
+
+```
 **Please read this document thoroughly** and plan your work accordingly.
 When ready, fork the repository and create a feature branch. It is in this branch we
 expect your delivery.
@@ -16,7 +47,7 @@ possible. (HINT: It is possible to solve this using only one `<button>`)
 
 
 * You can provide a solution for this separately or as a part of the solution for (3) *
-
+* `Comment: This task is done with <button> element`
 
 ### 2: Please answer the questions found in the link below ###
 https://sv.surveymonkey.com/r/QCT8SHL

@@ -1,0 +1,42 @@
+
+.input {
+  box-sizing: border-box;
+  width:100%;
+  padding:0.5em;
+  font-size: 2em;
+  border: 1px solid #666666;
+  outline: none;
+  &:after{
+    background: black;
+    width: 0.2em;
+    height: 1em;
+  }
+}
+
+
+.autocomplete {
+  width:100%;
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items{
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  border: 1px solid #666666;
+  z-index: 99;
+  top: 5em;
+  left: 0;
+  right: 0;
+  max-height: 230px;
+  overflow-y: scroll;
+}
+
+.autocomplete-items div {
+  padding: 1em;
+  cursor: pointer;
+  &:hover{
+    background-color: #e9e9e9;
+  }
+}
+
