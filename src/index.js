@@ -1,6 +1,6 @@
 import "./styles/main.scss" //imports the scss file and finally will be exported by the webpack to the styles
 import DeleteButton from "./components/DeleteButton"
-import SearchComponent from "./components/SeachComponent";
+import SearchComponent from "./components/SearchComponent";
 
 const deleteButton = new DeleteButton();
 document.getElementById("buttonContainer").innerHTML = deleteButton.createHTMLNode();
