@@ -1,4 +1,4 @@
-import * as templateArray from "./templates";
+import * as templateArray from "./Templates";
 import SearchHistory from "./SearchHistory";
 
 const searchHistory = new SearchHistory();

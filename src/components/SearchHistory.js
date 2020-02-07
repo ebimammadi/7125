@@ -1,4 +1,4 @@
-import {searchHistoryTemplateNode,searchRecordTemplateNode} from "./templates"
+import {searchHistoryTemplateNode,searchRecordTemplateNode} from "./Templates"
 
 /**
  * SearchHistory class

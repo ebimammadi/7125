@@ -1,4 +1,4 @@
-import {searchComponentTemplateNode} from "./templates";
+import {searchComponentTemplateNode} from "./Templates";
 import SearchHistory from "./SearchHistory";
 import SearchAutoComplete from "./SearchAutoComplete";
 

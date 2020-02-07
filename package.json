@@ -19,13 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hmfe/7125.git"
+    "url": "git+https://github.com/ebimammadi/7125.git"
   },
   "keywords": [],
   "author": "ebrahim",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hmfe/7125/issues"
-  },
-  "homepage": "https://github.com/hmfe/7125#readme"
+  "license": "ISC"
 }
