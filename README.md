@@ -1,7 +1,7 @@
 # WORK TASK #
 * NOTE: Webpack is used here. To run this server, first you should run `npm install`, then `npm start`, you can see the application running
 * For building the application to dist folder run `npm build`
-* Finding a free public API was a time-consuming, so I created a simple GET at this address: https://omid.tadbir.net/api.php&search=SEARCH&searchInMiddle=true/false`
+* Finding a free public API was a time-consuming, so I created a simple GET at this address: https://tadbir.net/tests/javascript-search/api.php&search=SEARCH&searchInMiddle=true/false`
 * The delay for less stress on the API and capability to search in the middle of the title can be configure at `./src/index.js`
 * It was not clear to put the search history just under the autocomplete part, so I considered the autocomplete onto this part, if it is required I can change it.
 * Hope that I can have your honest feedback
