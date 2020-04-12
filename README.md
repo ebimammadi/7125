@@ -6,6 +6,8 @@
 * It was not clear to put the search history just under the autocomplete part, so I considered the autocomplete onto this part, if it is required I can change it.
 * Hope that I can have your honest feedback
 
+* Please find the online working codes here https://tadbir.net/tests/javascript-search
+
 ## File structure
 ```               
 ├── src
@@ -16,7 +18,7 @@
 |       ├── SeacrhHistory.js
 |       └── Templates.js                - Template literal JS 
 │   ├── images
-|       └── favicon.png         
+|       └── favicon.ico         
 |   ├── styles 
 |       ├── ButtonComponent.scss                      
 |       ├── main.scss                   - The main responsive part 
