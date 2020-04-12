@@ -18,8 +18,7 @@ document.getElementById("searchContainer").innerHTML = searchComponent.createHTM
  *  creates the desired events for the search component
  *  millisecond is for the delay to specify less stress sent to the API
  *  searchInMiddle when is 'true' can fetch for example 'Tanzania, United Republic of' when searching 'united' (in the middle of a title)
- *  and when is 'false' only starts with the title
+ *  and when it is 'false', it shall only start with the title
  */
-
-searchComponent.addEvents(1000,false)
+searchComponent.addEvents(10,false)
 

@@ -42,6 +42,8 @@ $size-x-big-height : 40px;
 * {
     box-sizing: border-box;
     font-family: Arial,SansSerif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     margin: 0px;
     padding: 0px;
 }
@@ -51,4 +53,15 @@ h1 {
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.description{
+    margin: 50px 20px 20px;
+}
+
+.description p {
+    line-height: 1.5em;
+}
+.description a {
+    color: darkturquoise;
 }

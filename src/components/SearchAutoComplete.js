@@ -3,10 +3,6 @@ import SearchHistory from "./SearchHistory";
 
 const searchHistory = new SearchHistory();
 
-/**
- * removeSearchRecord function removes the html node from the 'searchHistoryContainer'
- * @param  {string} elementId is the id of the desired node
- */
 class SearchAutoComplete{
     /**
      * createHTMLNode function creates the autoComplete input search
@@ -21,7 +17,7 @@ class SearchAutoComplete{
      * @param {boolean} searchInMiddle is a flag to search just starting with the title or it can be in the middle of a title:
      * 'true': in the middle of a title, 'false': only starts with the title
      */
-    createKeyupInputEvent(milliseconds,searchInMiddle){
+    createKeyupInputEvent(milliseconds,searchInMiddle) {
         document.getElementById("search").addEventListener(
             'keyup',
             this.lessStressingFetch(
@@ -40,7 +36,7 @@ class SearchAutoComplete{
      * createOnFocusOutEvent function removes the autoCompleteItems
      */
     createOnFocusOutEvent(){
-        document.addEventListener("click",  ()=> this.removeAutoCompleteItems() );
+        document.addEventListener("click",  () => this.removeAutoCompleteItems() );
     }
 
     /**
@@ -82,10 +78,11 @@ class SearchAutoComplete{
      */
     removeAutoCompleteItems(){
         document.getElementById("autoCompleteContainer").style.display="none";
-        const container = document.getElementById('autoCompleteContainer');
-        while(container.childNodes.length>1) {
-            container.removeChild(container.lastChild)
-        }
+        document.getElementById("autoCompleteContainer").innerHTML = ""
+        // const container = document.getElementById('autoCompleteContainer');
+        // while(container.childNodes.length>1) {
+        //     container.removeChild(container.lastChild)
+        // }
     }
 
     /**
@@ -106,16 +103,18 @@ class SearchAutoComplete{
      */
     fetchDataFromAPI(searchInMiddle){
         const search = document.getElementById("search").value.trim();
-        fetch("https://omid.tadbir.net/api.php?country="+ search +"&searchInMiddle="+searchInMiddle, {
+        fetch("https://tadbir.net/tests/javascript-search/api.php?country="+ search +"&searchInMiddle="+searchInMiddle, {
             "method": "GET"
         })
-            .then(response => response.json())
-            .then(data => {
+            .then( response => response.json())
+            .then( data => {
+                this.removeAutoCompleteItems();
                 if (data.length > 0) this.createAutoCompleteItems(data)
             })
             .catch(err => {
                 console.log(err);
             });
     }
+
 }
 export default SearchAutoComplete

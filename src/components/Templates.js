@@ -21,29 +21,28 @@ export const searchHistoryTemplateNode =
     `<div class="searchHistoryContainer" id="searchHistoryBar" >
         <div class="search-record-outer"  >
             <div class="search-record-inner">
-                <span><b>Search History</b></span>
-                <span class="search-record-right" >
-                    <a href="#" id="clearSearchHistory">
-                        Clear search history
-                    </a>
-                </span>
+              Search History
+              <button class="clear-button transparent-button" id="clearSearchHistory">
+                Clear search history
+              </button>
             </div>
           </div>
       </div>
       <div class="searchHistoryContainer" id="searchHistoryContainer" >                
-    </div>
+      </div>
+      <p><br><br>Note: It is a test application, and the arrow key functionality is not added yet!</p>
     `
 
 export const deleteButtonTemplateNode = (title) => {
     return(
         `<div class="extended-box extended" >
-            <h1>CSS-wizardry</h1>
+            <h1>CSS-wizardry (Pure CSS)</h1>
             <button class="delete-button">
                 ${title}
-                <span class="close-x">
-                    <span class="slash-x"></span>
-                    <span class="backslash-x"></span>
+              <span class="white-circle">
+                <span class="x">
                 </span>
+              </span>
             </button>
         </div>`
     )
@@ -53,12 +52,13 @@ export const searchRecordTemplateNode = (title, id, date) => {
     return( `<div class="search-record-outer search-record" id="${id}">
                 <div class="search-record-inner">
                     <span>${title}</span>
-                    <span class="search-record-right">
-                        <span>
+<!--                    <span >-->
+                        <date datetime="${date}" class="search-record-right">
                             ${date}
-                        </span> 
-                        <span class="close" id="close-${id}" ></span>
-                    </span>
+                        </date> 
+<!--                        <span class="close" id="close-${id}" ></span>-->
+                        <button class="transparent-button x x-size-small bg-gray" id="close-${id}" ></button>
+<!--                    </span>-->
                 </div>
             </div>`)
 }
@@ -66,7 +66,7 @@ export const searchRecordTemplateNode = (title, id, date) => {
 export const searchComponentTemplateNode = (searchNode,historyNode) => {
     return(
         `<div class="extended-box" >
-                <h1>Simple search application</h1>
+                <h1>Simple JavaScript search application</h1>
                 ${searchNode} 
                 ${historyNode}
         </div>`

@@ -17,7 +17,7 @@ module.exports = {
                 title: "Ebrahim - Work-Tast",
                 template: "./src/templates/index.template.html",
                 minify: true,
-                favicon: "./src/images/favicon.png"
+                favicon: "./src/images/favicon.ico"
             }
         )
     ],

@@ -20,8 +20,9 @@ class SearchHistory {
             'click',
             () => {
                 const container = document.getElementById('searchHistoryContainer');
-                while(container.childNodes.length>1)
-                    container.removeChild(container.lastChild)
+                document.getElementById('searchHistoryContainer').innerHTML = ''
+                // while(container.childNodes.length>1)
+                //     container.removeChild(container.lastChild)
             }
         )
     }

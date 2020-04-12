@@ -7,7 +7,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
+
 .delete-button {
     display: flex;
     align-items: center;
@@ -16,42 +18,48 @@
     border: 3px solid #818181;
     color: #000;
     padding: 15px;
-    font-family: "Arial Black", SansSerif;
     font-size: 36px;
     font-weight: bold;
     outline: none;
     cursor: pointer;
     opacity: 0.9;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    max-width: 300px;
+    flex-wrap: wrap;
 }
 .delete-button:hover {
     opacity: 1.0;
 }
 
-.close-x{
+.white-circle {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     margin-left: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 90px;
-    width: 90px;
-    background-color: #ffffff;
-    border-radius: 50%;
+    align-items: center;
 }
-.slash-x{
-    position: relative;
-    left:3px;
-    height: 40px;
-    width: 6px;
-    background-color: #000000;
-    display: inline-block;
-    transform: rotate(45deg);
-}
-.backslash-x{
-    position: relative;
-    left:-3px;
-    height: 40px;
-    width: 6px;
-    background-color: #000000;
-    display: inline-block;
-    transform: rotate(-45deg);
+
+$x-width : 0.12;
+
+.x{
+    clip-path: polygon(
+                    percentage($x-width) 0%, 50% percentage(0.5-$x-width),percentage(1-$x-width) 0%,
+                    100% percentage($x-width), percentage(0.5+$x-width) 50%, 100% percentage(1-$x-width),
+                    percentage(1-$x-width) 100%, 50% percentage(0.5+$x-width),percentage($x-width) 100%,
+                    0% percentage(1-$x-width),percentage(0.5-$x-width) 50%,0% percentage($x-width)
+    );
+    -webkit-clip-path: polygon(
+                    percentage($x-width) 0%, 50% percentage(0.5-$x-width),percentage(1-$x-width) 0%,
+                    100% percentage($x-width), percentage(0.5+$x-width) 50%, 100% percentage(1-$x-width),
+                    percentage(1-$x-width) 100%, 50% percentage(0.5+$x-width),percentage($x-width) 100%,
+                    0% percentage(1-$x-width),percentage(0.5-$x-width) 50%,0% percentage($x-width)
+    );
+    width:50%;
+    height:50%;
+    background-color:black;
 }

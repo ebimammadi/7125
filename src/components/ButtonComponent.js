@@ -4,7 +4,8 @@ import {deleteButtonTemplateNode} from "./Templates"
  */
 class ButtonComponent {
     constructor() {
-        this.title = "Delete";
+        this.title = "Delete"
+         // this.title = "DeleteDeleteDeleteDeleteDeleteDeleteDeleteDeleteDeleteDeleteDelete";
     }
     /**
      * Creates the deleteButton element (CSS button)

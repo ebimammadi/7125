@@ -13,14 +13,27 @@
   position: relative;
 }
 
-#clearSearchHistory{
+.transparent-button{
   color: #818181;
-  text-decoration: underline;
+  border: none;
+  background: none;
+  margin: 0;
+  &:hover{
+    cursor: pointer;
+  }
 }
-#clearSearchHistory:hover{
-  color: #666666;
+
+.clear-button{
   text-decoration: underline;
+  font-size: 0.8em;
+  &:hover{
+    color: #666666;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 }
+
 
 //for sizing and better view
 .extended-box {
@@ -30,7 +43,7 @@
 
 .search-record-outer{
   width: 100%;
-  padding: 0em 1em;
+  padding: 0 1em;
 }
 
 .search-record-inner{
@@ -42,11 +55,7 @@
   color: #333333;
   display: flex;
   justify-content: space-between;
-}
-
-.search-record-right{
-  color: #818181;
-  font-size: 0.8em;
+  //font-weight: bold;
 }
 
 .search-record:hover{
@@ -79,4 +88,12 @@
 }
 .close:after {
   transform: rotate(-45deg);
+}
+//Note it uses the .x class in ButtonComponent
+.x-size-small {
+  width:15px;
+  height:15px;
+}
+.bg-gray {
+  background-color: #818181 ;
 }

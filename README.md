@@ -1,5 +1,5 @@
 # WORK TASK #
-* NOTE: I have used node.js and webpack to run this server. First you should run `npm install`, then `npm start`, you can see the application running
+* NOTE: Webpack is used here. To run this server, first you should run `npm install`, then `npm start`, you can see the application running
 * For building the application to dist folder run `npm build`
 * Finding a free public API was a time-consuming, so I created a simple GET at this address: https://omid.tadbir.net/api.php&search=SEARCH&searchInMiddle=true/false`
 * The delay for less stress on the API and capability to search in the middle of the title can be configure at `./src/index.js`
