@@ -103,6 +103,7 @@ class SearchAutoComplete{
      */
     fetchDataFromAPI(searchInMiddle){
         const search = document.getElementById("search").value.trim();
+        //I have changed the API address
         fetch("https://tadbir.net/tests/javascript-search/api.php?country="+ search +"&searchInMiddle="+searchInMiddle, {
             "method": "GET"
         })
