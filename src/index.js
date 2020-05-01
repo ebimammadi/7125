@@ -20,5 +20,5 @@ document.getElementById("searchContainer").innerHTML = searchComponent.createHTM
  *  searchInMiddle when is 'true' can fetch for example 'Tanzania, United Republic of' when searching 'united' (in the middle of a title)
  *  and when it is 'false', it shall only start with the title
  */
-searchComponent.addEvents(10,false)
+searchComponent.addEvents(1500,false)
 
